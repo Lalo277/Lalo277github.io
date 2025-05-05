@@ -28,10 +28,10 @@ var lyricsData = [
   { text: "Tú lo tienes todo, te digo la neta", time: 94 },
   { text: "Pero sin mí estás casi completa", time: 98 },
   { text: "♥----♥----♥", time: 107 },
-  { text: "♥----I----♥", time: 100 },
-  { text: "♥---LOVE---♥", time: 104 },
-  { text: "♥---YOU---♥", time: 108 },
-  { text: "♥----♥----♥", time: 112 },
+  { text: "♥----I----♥", time: 110 },
+  { text: "♥---LOVE---♥", time: 113 },
+  { text: "♥---YOU---♥", time: 116 },
+  { text: "♥----♥----♥", time: 119 },
   { text: "Alguien que te trate bien, que te sepa querer", time: 121 },
   { text: "Que en un beso intenso te enchine la piel", time: 125 },
   { text: "Que cuando tú estés con él no le importe nada más", time: 128 },
@@ -53,7 +53,7 @@ function updateLyrics() {
   var delayOffset = 0.5; // Puedes ir afinando este número
 var time = audio.currentTime - delayOffset;
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 3
+    (line) => time >= line.time && time < line.time + 7
   );
 
   if (currentLine) {
