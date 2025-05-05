@@ -50,7 +50,8 @@ var lyricsData = [
 
 // Animar las letras
 function updateLyrics() {
-  var time = Math.floor(audio.currentTime);
+  var delayOffset = 0.5; // Puedes ir afinando este número
+var time = audio.currentTime - delayOffset;
   var currentLine = lyricsData.find(
     (line) => time >= line.time && time < line.time + 3
   );
@@ -70,7 +71,7 @@ function updateLyrics() {
   }
 }
 
-setInterval(updateLyrics, 1000);
+setInterval(updateLyrics, 100);
 
 //funcion titulo
 // Función para ocultar el título después de 216 segundos
