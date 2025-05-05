@@ -50,10 +50,10 @@ var lyricsData = [
 
 // Animar las letras
 function updateLyrics() {
-  var delayOffset = 0.8; // Puedes ir afinando este número
+  var delayOffset = 0.6; // Puedes ir afinando este número
 var time = audio.currentTime - delayOffset;
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 6
+    (line) => time >= line.time && time < line.time + 4
   );
 
   if (currentLine) {
