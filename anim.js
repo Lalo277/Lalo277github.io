@@ -53,7 +53,7 @@ function updateLyrics() {
   var delayOffset = 0.6; // Puedes ir afinando este número
 var time = audio.currentTime - delayOffset;
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 5
+    (line) => time >= line.time && time < line.time + 4
   );
 
   if (currentLine) {
