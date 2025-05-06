@@ -50,15 +50,15 @@ var lyricsData = [
 
 // Animar las letras
 function updateLyrics() {
-  var delayOffset = 0.10; // Puedes ir afinando este número
+  var delayOffset = 0.6; // Puedes ir afinando este número
 var time = audio.currentTime - delayOffset;
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 6
+    (line) => time >= line.time && time < line.time + 5
   );
 
   if (currentLine) {
     // Calcula la opacidad basada en el tiempo en la línea actual
-    var fadeInDuration = 0.4; // Duración del efecto de aparición en segundos
+    var fadeInDuration = 0.5; // Duración del efecto de aparición en segundos
     var opacity = Math.min(1, (time - currentLine.time) / fadeInDuration);
 
     // Aplica el efecto de aparición
